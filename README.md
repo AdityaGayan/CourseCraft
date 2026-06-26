@@ -1,1 +1,1 @@
-# AI-Course-Builder
+# CourseCraft
