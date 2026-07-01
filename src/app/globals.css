@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #14110f;        /* page background */
+  --paper-dim: #1e1a16;  /* card background, one step up from ink */
+  --paper: #ece4d6;      /* primary text, warm off-white */
+  --accent: #d6a24c;     /* aged-gold marginalia ink, links/labels/CTAs */
+  --accent2: #6e8b7a;    /* sage, used for correct-answer state */
+  --rule: #3a332b;       /* hairline borders */
+}
+
+body {
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
